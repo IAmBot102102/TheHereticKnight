@@ -1,4 +1,4 @@
 # TheHereticKnight
 This is the HereticKnightProgram
 
-v0.0001
+v -0.000000001
