@@ -1,0 +1,12 @@
+.AttackButton{
+
+}
+
+body {
+	background-color: black;
+	border: 10px groove yellow;
+}
+
+#BackgroundPicture{
+	position: absolute;
+}
