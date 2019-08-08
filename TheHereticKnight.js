@@ -18,9 +18,16 @@ var ManaSkills = {
 var ChiSkills = {
 	"Healing Wish" : 1
 };
-var EnemyStats = {};
+var EnemyStats = {
+	"Health" : 0,
+	"Mana" : 0,
+	"Chi" : 0,
+	"Damage" : 0,
+	"Defense" : 0.
+	"Luck" : 0
+};
 var Inventory = [];
-console.log("Encounter with Starter Trainer Monter thing");
+console.log("Encounter with Starter Trainer Monter thing");\
 var Alive = true;
 function EncounterLoop(){
 	while(Alive == true){
@@ -32,4 +39,33 @@ function KeyActions(event){
 	var KeyAction = event.keyCode;
 	alert(KeyAction);
 }
-var GameLoop = setInterval(EncounterLoop, 1000/60);
+
+function RandomizeEnemyStats(){
+	EnemyStats["Health"] = 100 + Math.round(Math.random()*20)
+	EnemyStats["Mana"] = 10 + Math.round(Math.random()*20)
+	EnemyStats["Chi"] = 10 + Math.round(Math.random()*20)
+	EnemyStats["Damage"] = 10 + Math.round(Math.random()*20)
+	EnemyStats["Defense"] = 10 + Math.round(Math.random()*20)
+	EnemyStats["Luck"] = 20 + Math.round(Math.random()*20)
+
+}
+var attacks = {
+	"Attack" : 0,
+	"Defend" : 0,
+	"ManaSkill" : 10,
+	"ChiSkill" : 10
+};
+RandomizeEnemyStats()
+var attacked = false;
+while(Alive == true){
+	alert(EnemyStats);
+	var dope = prompt("What do you do? \n Attack \n Defend \n ManaSkill \n ChiSkill");
+	if(dope == "Attack"){
+		EnemyStats["Health"] -= Math.round(PlayerStats["Damage"] / 2);
+	} else if(dope == "Defend"){
+		PlayerStats["Defense"] = PlayerStats["Defense"] * 2;
+	} else if(dope == "ManaSkill"){
+		PlayerStats["Mana"] -= ManaSkills["Mana Arrow"]
+		EnemyStats["Health"] 
+	}
+}

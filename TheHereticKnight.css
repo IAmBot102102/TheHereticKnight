@@ -1,5 +1,38 @@
 .AttackButton{
+	width:;
+	height:;
+	color:;
+	background-color:;
+	background-image: url("");
+	border:;
+}
+.AttackButton:hover{
+	width:;
+	height:;
+	color:;
+	background-color:;
+	background-image: url("");
+	border:;
+}
+#HealthBar{
+	width:;
+	height:;
+	background-color:;
+	border:;
+}
 
+#ManaBar{
+	width:;
+	height:;
+	background-color:;
+	border:;
+}
+
+#ChiBar{
+	width:;
+	height:;
+	background-color:;
+	border:;
 }
 
 body {
@@ -9,4 +42,25 @@ body {
 
 #BackgroundPicture{
 	position: absolute;
+	background-image: url("");
+}
+
+#DevConsoleInput{
+	width:;
+	height:;
+	border:;
+	background-color:;
+	color:;
+}
+
+#DevConsoleLogs{
+	width:;
+	height:;
+	border:;
+}
+
+#DevConsoleBorder{
+	width:;
+	height:;
+	border:;
 }
