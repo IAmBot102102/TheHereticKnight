@@ -26,8 +26,7 @@ config/icon="res://SpritePicturesTextures/icon.png"
 
 [autoload]
 
-EnemyStatsAndMovement="*res://Scripts/EnemyStatsAndMovement.gd"
-PlayerStatsAndMovements="*res://Scripts/PlayerStatsAndMovements.gd"
+dir="*res://Scripts/Directions.gd"
 
 [input]
 

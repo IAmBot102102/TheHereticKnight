@@ -1,10 +1,8 @@
 extends KinematicBody2D
 class_name Entity
-
 # The programmer can edit these in the inspector. Easy to change.
 export var Health := 100
 export var Speed := 200
-
 # Emitted when move_and_collide returns a body
 signal collided (body)
 # Emitted when Health is lower than 0
