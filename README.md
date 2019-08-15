@@ -9,7 +9,7 @@ Made with Godot Game Engine
     Falcon
     Eggman
     ChustinLol
-    TheMammothMan
+    TheMammothManReloaded
     TheDoom2
     AIDS
 
