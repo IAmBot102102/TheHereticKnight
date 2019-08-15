@@ -16,14 +16,8 @@ _global_script_class_icons={
 [application]
 
 config/name="TheHereticKnight"
-run/main_scene="res://TestWorld.tscn"
-config/icon="res://icon.png"
-
-[autoload]
-
-AttackScript="*res://Scripts/AttackScript.gd"
-EnemyStats="*res://Scripts/EnemyStats.gd"
-PlayerStatistics="*res://Scripts/PlayerStatistics.gd"
+run/main_scene="res://Scenes/TestWorld.tscn"
+config/icon="res://SpritePicturesTextures/icon.png"
 
 [rendering]
 
