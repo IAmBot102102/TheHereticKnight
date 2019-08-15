@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Person.png-8759f556607af0fe20227cfea747930c.stex"
+path="res://.import/wall.png-4396b9884046ba79314a6e3aed6ac423.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpritePicturesTextures/Person.png"
-dest_files=[ "res://.import/Person.png-8759f556607af0fe20227cfea747930c.stex" ]
+source_file="res://Assets/Tiles/wall.png"
+dest_files=[ "res://.import/wall.png-4396b9884046ba79314a6e3aed6ac423.stex" ]
 
 [params]
 
