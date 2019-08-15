@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ene.png-daa9d3ca86b8ee29f5f2f5e4956eb592.stex"
+path="res://.import/person.png-48effd45412e31a8d92f49f51cb7eb8c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SpritePicturesTextures/ene.png"
-dest_files=[ "res://.import/ene.png-daa9d3ca86b8ee29f5f2f5e4956eb592.stex" ]
+source_file="res://Assets/Sprites/person.png"
+dest_files=[ "res://.import/person.png-48effd45412e31a8d92f49f51cb7eb8c.stex" ]
 
 [params]
 
