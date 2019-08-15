@@ -11,6 +11,6 @@ Made with Godot Game Engine
     ChustinLol
     TheMammothMan
     TheDoom2
-    Aids
+    AIDS
 
 ## v 0.000000001
