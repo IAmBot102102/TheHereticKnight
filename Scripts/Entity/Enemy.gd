@@ -1,19 +1,27 @@
 extends Entity
-var MoveTimerLength := 20
-var MoveTimer = 0
-var move = Vector2(0,0)
+
+export var MovementInterval := 0.8
+
+var move := Vector2.ZERO
+
 func _ready():
 	add_to_group("enemy")
-	var movedir = dir.randomDirection()
 	
+	var timer := Timer.new()
+	timer.start(MovementInterval)
+	timer.connect("timeout", self, "_on_timeout")
+	add_child(timer)
 	
-func _physics_process(delta):
-	## TRYING TO MAKE THE ENEMY MOVE
-	## IDK HOW BUT THIS IS NOT MOVING IM GOIN INSANE HERE ndvklsa;vndksla;vds
-	var motion = move.normalized() * Speed
-	move_and_slide(motion, Vector2(0,0))
-	if MoveTimer > 0:
-		MoveTimer -= 1
-	if MoveTimer == 0:
-		var movedir = dir.randomDirection()
-		MoveTimer = MoveTimerLength
+func movement(delta) -> Vector2:
+	return move.normalized() * Speed * delta
+
+func _on_timeout():
+	randomize()
+	var rand := randi() % 4
+	
+	match rand:
+		1: move = Vector2.UP
+		2: move = Vector2.DOWN
+		3: move = Vector2.LEFT
+		4: move = Vector2.RIGHT
+		_: move = Vector2.ZERO

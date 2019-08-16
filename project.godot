@@ -20,13 +20,9 @@ _global_script_class_icons={
 
 [application]
 
-config/name="TheHereticKnight"
+config/name="The Heretic Knight"
 run/main_scene="res://Scenes/World.tscn"
 config/icon="res://SpritePicturesTextures/icon.png"
-
-[autoload]
-
-dir="*res://Scripts/Directions.gd"
 
 [input]
 
