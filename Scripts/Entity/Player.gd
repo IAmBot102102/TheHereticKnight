@@ -6,7 +6,6 @@ various other things for the user to control.
 """
 
 var movedir := Vector2()
-
 func _ready():
 	add_to_group("playable", true)
 	add_to_group("trackable", true)
