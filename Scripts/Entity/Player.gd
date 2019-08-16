@@ -9,6 +9,7 @@ var movedir := Vector2()
 
 func _ready():
 	add_to_group("playable", true)
+	add_to_group("trackable", true)
 	connect("collided", self, "_on_collision")
 
 func _on_collision(body : KinematicCollision2D):

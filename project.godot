@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Entity",
+"class": "Enemy",
+"language": "GDScript",
+"path": "res://Scripts/Entity/Enemy/Enemy.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "Entity",
 "language": "GDScript",
 "path": "res://Scripts/Entity/Entity.gd"
 } ]
 _global_script_class_icons={
+"Enemy": "",
 "Entity": ""
 }
 
@@ -22,7 +28,7 @@ _global_script_class_icons={
 
 config/name="The Heretic Knight"
 run/main_scene="res://Scenes/World.tscn"
-config/icon="res://SpritePicturesTextures/icon.png"
+config/icon="res://icon.png"
 
 [input]
 
