@@ -18,10 +18,22 @@ _global_script_classes=[ {
 "class": "Entity",
 "language": "GDScript",
 "path": "res://Scripts/Entity/Entity.gd"
+}, {
+"base": "Node",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://Scripts/Inventory/Inventory.gd"
+}, {
+"base": "Node",
+"class": "Item",
+"language": "GDScript",
+"path": "res://Scripts/Item/Item.gd"
 } ]
 _global_script_class_icons={
 "Enemy": "",
-"Entity": ""
+"Entity": "",
+"Inventory": "",
+"Item": ""
 }
 
 [application]
@@ -29,6 +41,10 @@ _global_script_class_icons={
 config/name="The Heretic Knight"
 run/main_scene="res://Scenes/UI/MainMenu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+ItemFlags="*res://Scripts/Item/ItemFlags.gd"
 
 [display]
 
