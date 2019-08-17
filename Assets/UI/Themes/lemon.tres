@@ -1,0 +1,58 @@
+[gd_resource type="Theme" load_steps=9 format=2]
+
+[ext_resource path="res://Assets/UI/Templates/button_disabled.tres" type="StyleBox" id=1]
+[ext_resource path="res://Assets/UI/Templates/button_normal.tres" type="StyleBox" id=2]
+[ext_resource path="res://Assets/UI/Templates/label_normal.tres" type="StyleBox" id=3]
+[ext_resource path="res://Assets/UI/Templates/panel_normal.tres" type="StyleBox" id=4]
+[ext_resource path="res://Assets/Fonts/artwiz-lemon.tres" type="DynamicFont" id=5]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.278431, 0.258824, 0.494118, 1 )
+border_width_left = 4
+border_width_top = 3
+border_width_right = 4
+border_width_bottom = 3
+border_color = Color( 0.572549, 0.533333, 0.690196, 1 )
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.278431, 0.258824, 0.494118, 1 )
+border_width_left = 4
+border_width_top = 3
+border_width_right = 4
+border_width_bottom = 3
+border_color = Color( 0.533333, 0.690196, 0.619608, 1 )
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[resource]
+default_font = ExtResource( 5 )
+Button/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = null
+Button/styles/disabled = ExtResource( 1 )
+Button/styles/focus = null
+Button/styles/hover = SubResource( 1 )
+Button/styles/normal = ExtResource( 2 )
+Button/styles/pressed = SubResource( 2 )
+HSeparator/constants/separation = 4
+HSeparator/styles/separator = SubResource( 3 )
+Label/colors/font_color = Color( 1, 1, 1, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+Label/constants/line_spacing = 3
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/fonts/font = null
+Label/styles/normal = ExtResource( 3 )
+Panel/styles/panel = ExtResource( 4 )
+Panel/styles/panelf = null
+Panel/styles/panelnc = null
+PanelContainer/styles/panel = ExtResource( 4 )
+VSeparator/constants/separation = 4
+VSeparator/styles/separator = SubResource( 3 )
