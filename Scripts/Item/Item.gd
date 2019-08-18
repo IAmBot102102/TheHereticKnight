@@ -13,8 +13,9 @@ Hence the title "Legendary item."
 """
 
 """
-Item rarity. Though not implemented YET, It's here
-as sort of a #TODO.
+# TODO.
+
+Implement item rarity (or drop chance)
 """
 enum Rarity {
 	COMMON, UNCOMMON, RARE, LEGENDARY
@@ -36,6 +37,6 @@ An example would be increasing the default amount
 of slots available in the players' inventory (Bags), or
 something they have equipped that changes a certain stat.
 
-Flag constants are loaded as a global
+Flag constants are loaded as a global.
 """
 var modifiers : Array

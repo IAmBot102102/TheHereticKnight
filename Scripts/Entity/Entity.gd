@@ -1,8 +1,10 @@
 extends KinematicBody2D
 class_name Entity
+
 # The programmer can edit these in the inspector. Easy to change.
 export var Health := 100
 export var Speed := 200
+
 # Emitted when move_and_collide returns a body
 signal collided (body)
 # Emitted when Health is lower than 0
@@ -20,6 +22,16 @@ func _process(delta):
 	if Health < 0:
 		emit_signal("killed")
 
+"""
+# TODO
+
+Emitting a signal *every frame* isn't great for performance, and
+should be changed in the future. For stuff like this, a programmer 
+could probably call a function to handle the collision instead. 
+When attacks are implemented, this function will probably no longer 
+be needed, as all interactions will probably be handled using
+an "on_interact" signal.
+"""
 func _physics_process(delta):
 	# Moves the body along while detecting colliding bodies.
 	var body := move_and_collide(movement(delta))
