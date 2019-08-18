@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Assets/Tiles/Sets/WorldTilemap.tres" type="TileSet" id=1]
 [ext_resource path="res://Scenes/Entity/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Entity/Enemy/TrackingEnemy.tscn" type="PackedScene" id=3]
 
 [node name="World" type="Node2D"]
 
@@ -16,6 +15,3 @@ tile_data = PoolIntArray( -393225, 0, 0, -393224, 0, 0, -393223, 0, 0, -393222, 
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 180.251, -76.2602 )
-
-[node name="TrackingEnemy" parent="." instance=ExtResource( 3 )]
-Speed = 50
