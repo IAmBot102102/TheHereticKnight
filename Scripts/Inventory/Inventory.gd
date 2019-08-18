@@ -36,3 +36,10 @@ func add_item(item : Item):
 		items.resize(items.size() + (item.Size - 1))
 	items.append(item)
 	emit_signal("item_added", item)
+
+func remove_item(item) -> bool:
+	match typeof(item):
+		TYPE_STRING: break
+		TYPE_ARRAY: break
+		TYPE_INT: break
+	return false

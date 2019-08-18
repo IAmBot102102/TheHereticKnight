@@ -44,7 +44,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-ItemFlags="*res://Scripts/Item/ItemFlags.gd"
+ItemFlags="*res://Scripts/Item/ItemFlag.gd"
 
 [display]
 
