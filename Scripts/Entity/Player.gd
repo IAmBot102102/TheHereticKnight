@@ -32,7 +32,6 @@ func _input(event):
 		movedir.y = -int(UP) + int(DOWN)
 
 func movement(delta) -> Vector2:
-	print(movedir)
 	if collisionWithEnemy: movedir *= -5
 	return movedir.normalized() * Speed * delta
 

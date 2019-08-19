@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/UI/Themes/lemon.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/UI/Templates/seperator_empty.tres" type="StyleBox" id=2]
 [ext_resource path="res://Assets/Fonts/artwiz-lemon-ttf/lemon.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Scripts/UI/MainMenu/Play.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/UI/MainMenu/MenuButtons.tscn" type="PackedScene" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -69,33 +69,22 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.5
 custom_styles/separator = ExtResource( 2 )
 
-[node name="Buttons" type="VBoxContainer" parent="Panel/Sides"]
+[node name="Interactive" type="VBoxContainer" parent="Panel/Sides"]
 margin_left = 644.0
 margin_right = 893.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 alignment = 1
 
-[node name="TopVSep" type="VSeparator" parent="Panel/Sides/Buttons"]
+[node name="TopVSep" type="VSeparator" parent="Panel/Sides/Interactive"]
 margin_top = 272.0
 margin_right = 249.0
 margin_bottom = 275.0
 size_flags_stretch_ratio = 0.5
 
-[node name="Play" type="Button" parent="Panel/Sides/Buttons"]
-margin_top = 279.0
-margin_right = 249.0
-margin_bottom = 298.0
-text = "Play"
-script = ExtResource( 4 )
+[node name="Buttons" parent="Panel/Sides/Interactive" instance=ExtResource( 4 )]
 
-[node name="Options" type="Button" parent="Panel/Sides/Buttons"]
-margin_top = 302.0
-margin_right = 249.0
-margin_bottom = 321.0
-text = "Options"
-
-[node name="BottomVSep" type="VSeparator" parent="Panel/Sides/Buttons"]
+[node name="BottomVSep" type="VSeparator" parent="Panel/Sides/Interactive"]
 margin_top = 325.0
 margin_right = 249.0
 margin_bottom = 328.0

@@ -39,7 +39,7 @@ _global_script_class_icons={
 [application]
 
 config/name="The Heretic Knight"
-run/main_scene="res://Scenes/UI/MainMenu.tscn"
+run/main_scene="res://Scenes/UI/MainMenu/Menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
