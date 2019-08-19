@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/UI/Themes/lemon.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/UI/Templates/seperator_empty.tres" type="StyleBox" id=2]
 [ext_resource path="res://Assets/Fonts/artwiz-lemon-ttf/lemon.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Scenes/UI/MainMenu/MenuButtons.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/UI/Templates/label_noline.tres" type="StyleBox" id=4]
+[ext_resource path="res://Scenes/UI/MainMenu/MenuButtons.tscn" type="PackedScene" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -19,81 +20,84 @@ margin_right = 1024.0
 margin_bottom = 600.0
 
 [node name="Sides" type="HBoxContainer" parent="Panel"]
-margin_right = 1024.0
-margin_bottom = 600.0
+margin_right = 1016.0
+margin_bottom = 596.0
 alignment = 1
 
 [node name="LeftHSep" type="HSeparator" parent="Panel/Sides"]
-margin_right = 124.0
-margin_bottom = 600.0
+margin_right = 123.0
+margin_bottom = 596.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.5
 custom_styles/separator = ExtResource( 2 )
 
 [node name="Credits" type="VBoxContainer" parent="Panel/Sides"]
-editor/display_folded = true
-margin_left = 128.0
-margin_right = 512.0
-margin_bottom = 600.0
+margin_left = 127.0
+margin_right = 511.0
+margin_bottom = 596.0
 size_flags_horizontal = 3
 alignment = 1
 
 [node name="Title" type="Label" parent="Panel/Sides/Credits"]
-margin_top = 269.0
+margin_top = 266.0
 margin_right = 384.0
-margin_bottom = 302.0
+margin_bottom = 301.0
 custom_fonts/font = SubResource( 1 )
 text = "The Heretic Knight"
 align = 1
 valign = 1
 
 [node name="MidVSep" type="VSeparator" parent="Panel/Sides/Credits"]
-margin_top = 306.0
+margin_top = 305.0
 margin_right = 384.0
-margin_bottom = 309.0
+margin_bottom = 308.0
 size_flags_stretch_ratio = 0.5
 
 [node name="Github" type="Label" parent="Panel/Sides/Credits"]
-margin_top = 313.0
+margin_top = 312.0
 margin_right = 384.0
-margin_bottom = 330.0
+margin_bottom = 329.0
+custom_styles/normal = ExtResource( 4 )
 text = "https://github.com/IAmBot102102/TheHereticKnight"
 align = 1
 valign = 1
 
 [node name="MidHSep" type="HSeparator" parent="Panel/Sides"]
-margin_left = 516.0
-margin_right = 640.0
-margin_bottom = 600.0
+margin_left = 515.0
+margin_right = 638.0
+margin_bottom = 596.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.5
 custom_styles/separator = ExtResource( 2 )
 
 [node name="Interactive" type="VBoxContainer" parent="Panel/Sides"]
-margin_left = 644.0
-margin_right = 893.0
-margin_bottom = 600.0
+margin_left = 642.0
+margin_right = 888.0
+margin_bottom = 596.0
 size_flags_horizontal = 3
 alignment = 1
 
 [node name="TopVSep" type="VSeparator" parent="Panel/Sides/Interactive"]
-margin_top = 272.0
-margin_right = 249.0
-margin_bottom = 275.0
+margin_top = 270.0
+margin_right = 246.0
+margin_bottom = 273.0
 size_flags_stretch_ratio = 0.5
 
-[node name="Buttons" parent="Panel/Sides/Interactive" instance=ExtResource( 4 )]
+[node name="Buttons" parent="Panel/Sides/Interactive" instance=ExtResource( 5 )]
+margin_top = 277.0
+margin_right = 246.0
+margin_bottom = 319.0
 
 [node name="BottomVSep" type="VSeparator" parent="Panel/Sides/Interactive"]
-margin_top = 325.0
-margin_right = 249.0
-margin_bottom = 328.0
+margin_top = 323.0
+margin_right = 246.0
+margin_bottom = 326.0
 size_flags_stretch_ratio = 0.5
 
 [node name="RightHSep" type="HSeparator" parent="Panel/Sides"]
-margin_left = 897.0
-margin_right = 1024.0
-margin_bottom = 600.0
+margin_left = 892.0
+margin_right = 1016.0
+margin_bottom = 596.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.5
 custom_styles/separator = ExtResource( 2 )
