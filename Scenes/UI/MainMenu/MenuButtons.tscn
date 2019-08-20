@@ -18,3 +18,9 @@ margin_top = 24.0
 margin_right = 249.0
 margin_bottom = 44.0
 text = "Options"
+
+[node name="Quit" type="Button" parent="."]
+margin_top = 48.0
+margin_right = 249.0
+margin_bottom = 68.0
+text = "Quit"
