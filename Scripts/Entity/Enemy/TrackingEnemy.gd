@@ -14,7 +14,6 @@ var move := Vector2.ZERO
 
 func _ready():
 	add_child(timer)
-	
 	_retarget()
 
 # Overriden function from `class_name Entity`
@@ -30,12 +29,19 @@ func _retarget():
 	var trackables := get_tree().get_nodes_in_group("trackable")
 	var size := trackables.size()
 	
+	# If there are no trackables, kill this entity (avoid a crash)
+	if size == 0:
+		queue_free()
+		timer.start(1)
+		yield(timer, "timeout")
+		timer.stop()
+	
 	# Waits to retarget instead of resource-hogging
-#	if size == 0:
-#		timer.start(IdleRetargetTime)
-#		# Resumes execution when timer stops.
-#		yield(timer, "timeout")
-#		timer.stop()
+	#if size == 0:
+	#	timer.start(IdleRetargetTime)
+	#	# Resumes execution when timer stops.
+	#	yield(timer, "timeout")
+	#	timer.stop()
 	
 	# Called to generate a new seed for randi()
 	randomize()
