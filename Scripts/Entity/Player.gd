@@ -11,9 +11,7 @@ enum _direction { LEFT, RIGHT, UP, DOWN }
 var movedir := Vector2()
 var collisionWithEnemy := false
 
-func _ready():	
-	add_to_group("playable", true)
-	add_to_group("trackable", true)
+func _ready():
 	connect("collided", self, "_on_collision")
 
 func _on_collision(body : KinematicCollision2D):
