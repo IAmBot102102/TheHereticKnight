@@ -18,7 +18,7 @@ func _on_play_press():
 	get_tree().change_scene(path_to_scene)
 
 func _on_options_press():
-	var options_menu := load("res://Scenes/UI/MainMenu/MenuOptions.tscn")
+	var options_menu := load("res://levels/main_menu/main_menu_options.tscn")
 	var options_scene : Node = options_menu.instance()
 	
 	get_parent().add_child(options_scene)

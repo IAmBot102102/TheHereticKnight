@@ -53,7 +53,7 @@ window/stretch/aspect="keep"
 
 [game]
 
-main_menu/onplay_open_scene="res://Scenes/World.tscn"
+main_menu/onplay_open_scene="res://levels/test_world.tscn"
 
 [input]
 

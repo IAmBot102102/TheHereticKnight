@@ -6,22 +6,6 @@
 [ext_resource path="res://assets/theme/templates/label_noline.tres" type="StyleBox" id=4]
 [ext_resource path="res://levels/main_menu/main_menu_buttons.tscn" type="PackedScene" id=5]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [sub_resource type="DynamicFont" id=1]
 size = 32
 font_data = ExtResource( 3 )
@@ -94,21 +78,21 @@ size_flags_horizontal = 3
 alignment = 1
 
 [node name="TopVSep" type="VSeparator" parent="Panel/Sides/Interactive"]
-margin_top = 270.0
+margin_top = 258.0
 margin_right = 246.0
-margin_bottom = 273.0
+margin_bottom = 261.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.25
 
 [node name="Buttons" parent="Panel/Sides/Interactive" instance=ExtResource( 5 )]
-margin_top = 277.0
+margin_top = 265.0
 margin_right = 246.0
-margin_bottom = 319.0
+margin_bottom = 330.0
 
 [node name="BottomVSep" type="VSeparator" parent="Panel/Sides/Interactive"]
-margin_top = 323.0
+margin_top = 334.0
 margin_right = 246.0
-margin_bottom = 326.0
+margin_bottom = 337.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.25
 

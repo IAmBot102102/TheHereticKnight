@@ -4,15 +4,6 @@
 [ext_resource path="res://entity/enemy/enemy.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/enemy.png" type="Texture" id=3]
 
-
-
-
-
-
-
-
-
-
 [node name="Enemy" index="0" groups=[
 "enemy",
 ] instance=ExtResource( 1 )]

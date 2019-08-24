@@ -3,17 +3,6 @@
 [ext_resource path="res://assets/tilesets/world_tilemap.tres" type="TileSet" id=1]
 [ext_resource path="res://entity/player.tscn" type="PackedScene" id=2]
 
-
-
-
-
-
-
-
-
-
-
-
 [node name="World" type="Node2D"]
 
 [node name="Camera" type="Camera2D" parent="."]
