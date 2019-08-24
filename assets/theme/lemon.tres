@@ -1,11 +1,18 @@
 [gd_resource type="Theme" load_steps=10 format=2]
 
-[ext_resource path="res://Assets/UI/Templates/button_disabled.tres" type="StyleBox" id=1]
-[ext_resource path="res://Assets/UI/Templates/button_normal.tres" type="StyleBox" id=2]
-[ext_resource path="res://Assets/UI/Templates/label_normal.tres" type="StyleBox" id=3]
-[ext_resource path="res://Assets/UI/Templates/linedit_normal.tres" type="StyleBox" id=4]
-[ext_resource path="res://Assets/UI/Templates/panel_normal.tres" type="StyleBox" id=5]
-[ext_resource path="res://Assets/Fonts/artwiz-lemon.tres" type="DynamicFont" id=6]
+[ext_resource path="res://assets/theme/templates/button_disabled.tres" type="StyleBox" id=1]
+[ext_resource path="res://assets/theme/templates/button_normal.tres" type="StyleBox" id=2]
+[ext_resource path="res://assets/theme/templates/label_normal.tres" type="StyleBox" id=3]
+[ext_resource path="res://assets/theme/templates/linedit_normal.tres" type="StyleBox" id=4]
+[ext_resource path="res://assets/theme/templates/panel_normal.tres" type="StyleBox" id=5]
+[ext_resource path="res://assets/fonts/artwiz-lemon.tres" type="DynamicFont" id=6]
+
+
+
+
+
+
+
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.278431, 0.258824, 0.494118, 1 )

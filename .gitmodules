@@ -1,3 +1,3 @@
-[submodule "Assets/artwiz-lemon-ttf"]
-	path = Assets/Fonts/artwiz-lemon-ttf
+[submodule "assets/fonts/artwiz-lemon-ttf"]
+	path = assets/fonts/artwiz-lemon-ttf
 	url = https://github.com/fennerm/artwiz-lemon-ttf

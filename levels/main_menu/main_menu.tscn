@@ -1,10 +1,26 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Assets/UI/Themes/lemon.tres" type="Theme" id=1]
-[ext_resource path="res://Assets/UI/Templates/seperator_empty.tres" type="StyleBox" id=2]
-[ext_resource path="res://Assets/Fonts/artwiz-lemon-ttf/lemon.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assets/UI/Templates/label_noline.tres" type="StyleBox" id=4]
-[ext_resource path="res://Scenes/UI/MainMenu/MenuButtons.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/theme/lemon.tres" type="Theme" id=1]
+[ext_resource path="res://assets/theme/templates/seperator_empty.tres" type="StyleBox" id=2]
+[ext_resource path="res://assets/fonts/artwiz-lemon-ttf/lemon.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/theme/templates/label_noline.tres" type="StyleBox" id=4]
+[ext_resource path="res://levels/main_menu/main_menu_buttons.tscn" type="PackedScene" id=5]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 32

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/hm.wav-3c38d318f64c8a2d6dceae41288a3a6d.sample"
+path="res://.import/hm.wav-23bfb2d9d059beb340c53d8d6f6f9fa1.sample"
 
 [deps]
 
-source_file="res://Music/hm.wav"
-dest_files=[ "res://.import/hm.wav-3c38d318f64c8a2d6dceae41288a3a6d.sample" ]
+source_file="res://assets/audio/hm.wav"
+dest_files=[ "res://.import/hm.wav-23bfb2d9d059beb340c53d8d6f6f9fa1.sample" ]
 
 [params]
 
