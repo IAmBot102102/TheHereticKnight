@@ -4,7 +4,7 @@
 [ext_resource path="res://entity/player.gd" type="Script" id=2]
 [ext_resource path="res://assets/sprites/person.png" type="Texture" id=3]
 
-[node name="Player" index="0" groups=[
+[node name="Player" groups=[
 "playable",
 "trackable",
 ] instance=ExtResource( 1 )]
