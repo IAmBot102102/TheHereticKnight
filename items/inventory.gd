@@ -19,6 +19,7 @@ signal inventory_resized (added_slots)
 
 # The default number of slots in any given inventory.
 # NOTE: Inventory size on the screen is determined by a GUI.
+
 export var MaxSlots := 10
 
 var items : Array
@@ -38,6 +39,7 @@ func add_item(item : Item):
 	items.append(item)
 	emit_signal("item_added", item)
 
+	
 func remove_item(item : Item):
 	"""
 	# TODO
