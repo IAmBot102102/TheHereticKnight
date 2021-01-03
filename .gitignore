@@ -1,8 +1,0 @@
-# Ignore shell scripts
-*.sh
-*.bat
-
-# Ignore Visual Studio Code files
-*.vscode/
-*.code-workspace
-

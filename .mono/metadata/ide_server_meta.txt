@@ -1,2 +1,0 @@
-﻿52600
-C:\Users\LASP2\scoop\apps\godot-mono\current\godot.exe
